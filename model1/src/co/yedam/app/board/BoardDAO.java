@@ -1,6 +1,5 @@
 package co.yedam.app.board;
 
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +10,7 @@ public class BoardDAO extends DAO {
 		int r = 0;
 		try {
 			String sql="insert into board(no,poster,subject,contents,lastpost,views)"
-						+ " values((select max(no)+1 from board), ?,?,?, sysdate, 1)";
+						+ " values((select nvl(max(no),0)+1 from board), ?,?,?, sysdate, 1)";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getPoster());
 			psmt.setString(2, dto.getSubject());

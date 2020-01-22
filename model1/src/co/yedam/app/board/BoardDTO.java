@@ -10,6 +10,20 @@ public class BoardDTO {
 	private Date lastpost;
 	private int views;
 
+	
+	
+	public BoardDTO(int no, String poster, String subject) {//Generate using fields 생성자
+		this.no = no;
+		this.poster = poster;
+		this.subject = subject;
+	}
+
+
+	public BoardDTO() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public int getNo() {
 		return no;
 	}

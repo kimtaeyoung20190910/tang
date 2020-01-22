@@ -67,7 +67,7 @@
 	</table>
 	<table width="80%" border=0>
 		<tr>
-			<td align="right"><a href="insert_form.jsp"> 글쓰기</a></td>
+			<td align="right"><a href="boardCreateForm"> 글쓰기</a></td>
 		</tr>
 	</table>
 	<%=application.getRealPath("/")%><br> 서버 경로 -->
