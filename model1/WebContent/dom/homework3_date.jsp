@@ -10,7 +10,7 @@
 		//반올름해서 출력 할 것
 		
 		//날짜 연산 가능함 
-		var a = new Date() - new Date(2020,0,10);
+		var a = new Date() - new Date(2020,11,1); //밀리세컨드 long int
 		console.log(a / 1000 / 60 / 60 /24 );  
 	})
 </script>
