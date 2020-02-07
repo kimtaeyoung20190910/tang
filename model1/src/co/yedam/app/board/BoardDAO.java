@@ -70,7 +70,7 @@ public class BoardDAO extends DAO {
 			rs = psmt.executeQuery(); // 실행
 			if (rs.next()) { // 결과 옮겨담기
 				dto.setNo(rs.getInt("no"));
-				dto.setLastpost(rs.getDate("lastpost"));
+				//dto.setLastpost(rs.getDate("lastpost"));
 				dto.setContents(rs.getString("Contents"));
 				dto.setPoster(rs.getString("Poster"));
 				dto.setViews(rs.getInt("VIEWS"));
@@ -98,7 +98,7 @@ public class BoardDAO extends DAO {
 			while (rs.next()) {
 				BoardDTO dto = new BoardDTO();
 				dto.setNo(rs.getInt("no"));
-				dto.setLastpost(rs.getDate("lastpost"));
+				//dto.setLastpost(rs.getDate("lastpost"));
 				dto.setContents(rs.getString("Contents"));
 				dto.setPoster(rs.getString("Poster"));
 				dto.setViews(rs.getInt("VIEWS"));
